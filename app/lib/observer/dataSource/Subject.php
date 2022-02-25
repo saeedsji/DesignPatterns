@@ -18,9 +18,9 @@ class Subject {
         }
     }
 
-    public function notifyObservers($value) {
+    public function notifyObservers() {
         foreach ($this->observers as $observer) {
-            $observer->update($value);
+            $observer->update();
         }
     }
 }

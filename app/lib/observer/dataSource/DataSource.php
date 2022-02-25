@@ -11,6 +11,6 @@ class DataSource extends Subject {
 
     public function setValue($value): void {
         $this->value = $value;
-        $this->notifyObservers($value);
+        $this->notifyObservers();
     }
 }
