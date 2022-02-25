@@ -1,0 +1,26 @@
+<?php
+
+namespace App\lib\observer\dataSource;
+
+//Observable
+
+class Subject {
+
+    private $observers;
+
+    public function addObserver(Observer $observer) {
+        $this->observers[] = $observer;
+    }
+
+    public function removeObserver(Observer $observer) {
+        if (($key = array_search($observer, $this->observers)) !== false) {
+            unset($this->observers[$key]);
+        }
+    }
+
+    public function notifyObservers($value) {
+        foreach ($this->observers as $observer) {
+            $observer->update($value);
+        }
+    }
+}
