@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $run = new \App\lib\observer\conceptual\RunConceptualObserver();
+    $run = new \App\lib\chainOfResponsibility\webServer\RunWebServer();
     $run->run();
 });
 Route::get('/mobile', function () {
