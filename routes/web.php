@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $run = new \App\lib\chainOfResponsibility\webServer\RunWebServer();
+    $run = new \App\lib\composite\shape\RunShape();
     $run->run();
 });
 Route::get('/mobile', function () {
