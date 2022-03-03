@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $run = new \App\lib\adapter\Image\RunImage();
+    $run = new \App\lib\decorator\cloud\RunCloud();
     $run->run();
 });
 Route::get('/mobile', function () {
