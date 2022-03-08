@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $run = new \App\lib\factory\conceptual\RunFactoryConceptual();
+    $run = new \App\lib\factory\social\RunSocial();
     $run->run();
 });
 Route::get('/mobile', function () {
