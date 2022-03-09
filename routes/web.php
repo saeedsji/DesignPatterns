@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $run = new \App\lib\abstractFactory\gui\RunGui();
+    $run = new \App\lib\builder\slide\RunSlide();
     $run->run();
 });
 Route::get('/mobile', function () {
