@@ -1,7 +1,8 @@
 <?php
 
-namespace App\lib\factory\payment;
+namespace App\lib\factory\payment\Gateways\zarinpal;
 
+use App\lib\factory\payment\Gateways\Gateway;
 use Illuminate\Support\Facades\Log;
 
 class ZarinpalService implements Gateway {
