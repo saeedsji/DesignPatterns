@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $run = new \App\lib\builder\slide\RunSlide();
-    $run->run();
+    $run = new \App\lib\factory\payment\RunPayment();
+    return $run->run();
 });
 Route::get('/mobile', function () {
     $Samsung = new Mobile();

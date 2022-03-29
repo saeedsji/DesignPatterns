@@ -27,8 +27,6 @@ class RunBook {
         $this->writeln($strategyContextS->showBookTitle($book));
         $this->writeln('');
 
-
-
     }
 
     public  function writeln($line_in) {
